@@ -42,7 +42,7 @@ function Sidebar() {
   const handleViewChange = (isSeeLess) => {
     setIsSeeLess((prevState) => !prevState);
     
-    if (isSeeLess) {
+    if (!isSeeLess) {
       setPage(page + 1);
     }else{
       setPage(page);
